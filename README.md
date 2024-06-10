@@ -1,2 +1,2 @@
 # p3rc1us.github.io
-Portfolio of Kervy.. so far
+Hi my name is Kervy from the Philippines.
