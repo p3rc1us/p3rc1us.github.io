@@ -11,7 +11,7 @@ const handleOnMove = e => {
   if(track.dataset.mouseDownAt === "0") return;
   
   const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
+        maxDelta = window.innerWidth / 1.2;
   
   const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
@@ -29,8 +29,6 @@ const handleOnMove = e => {
     }, { duration: 1200, fill: "forwards" });
   }
 }
-
-/* -- Had to add extra lines for touch events -- */
 
 window.onmousedown = e => handleOnDown(e);
 
