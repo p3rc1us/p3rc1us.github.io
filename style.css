@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     background-color: white;
@@ -6,13 +8,22 @@ body {
     overflow: hidden;
   }
   
+  .left-pane{
+    padding: 20px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+  }
   #image-track {
     display: flex;
     gap: 4vmin;
     position: absolute;
-    left: 20%;
+    left: 38.5%;
     top: 50%;
-    transform: translate(0%, -50%); 
+    transform: translate(0%, -50%);
     user-select: none; /* -- Prevent image highlighting -- */
   }
   
